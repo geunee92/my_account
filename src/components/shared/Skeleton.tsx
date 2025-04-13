@@ -16,7 +16,7 @@ const opacity = keyframes`
     }
 `
 
-const Skeleton = styled.div<{ width: string; height: number }>(
+const Skeleton = styled.div<{ width: string | number; height: number }>(
   ({ width, height }) => ({
     width,
     height,

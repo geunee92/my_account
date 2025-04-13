@@ -5,7 +5,12 @@ const nextConfig: NextConfig = {
     emotion: true, // ✅ SWC 기반 Emotion 활성화!
   },
   images: {
-    domains: ['cdn1.iconfinder.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.iconfinder.com',
+      },
+    ],
   },
   /* config options here */
   reactStrictMode: true,
