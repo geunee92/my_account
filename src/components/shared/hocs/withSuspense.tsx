@@ -1,6 +1,6 @@
 import { Suspense, ComponentType, ReactNode } from 'react'
 
-function withSusepnse<Props = Record<string, never>>(
+function withSuspense<Props = Record<string, never>>(
   WrappedComponent: ComponentType<Props>,
   options: { fallback: ReactNode },
 ) {
@@ -13,4 +13,4 @@ function withSusepnse<Props = Record<string, never>>(
   }
 }
 
-export default withSusepnse
+export default withSuspense
