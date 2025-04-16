@@ -37,8 +37,6 @@ function CardListPage() {
 
   const cards = data?.pages.map(({ items }) => items).flat()
 
-  console.log(data)
-
   return (
     <div>
       <Top title="추천카드" subTitle="회원님을 위해 준비했어요" />
