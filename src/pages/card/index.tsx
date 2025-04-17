@@ -79,8 +79,6 @@ function CardListPage() {
 }
 
 export async function getServerSideProps() {
-  console.log('getServerSideProps')
-
   const client = new QueryClient()
 
   await client.prefetchInfiniteQuery(['cards'], () => getCards())
