@@ -6,7 +6,7 @@ import { User } from '@models/user'
 export default NextAuth({
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_ID as string,
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
@@ -15,7 +15,7 @@ export default NextAuth({
     strategy: 'jwt' as const,
   },
   pages: {
-    signIn: '/users/signin',
+    signIn: '/auth/signin',
   },
 
   callbacks: {
